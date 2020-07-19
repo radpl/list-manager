@@ -19,7 +19,7 @@
         },
         {
           "columnId": 2,
-          "columnName": "cena"
+          "columnName": "ceny"
         }
       ],
       "id": 2
@@ -59,34 +59,52 @@
       "pathToParent": [
         1
       ],
-      "children": [],
-      "visible": true
+      "children": [
+        3
+      ],
+      "visible": true,
+      "ec": "expanded"
     },
     {
       "listId": 1,
       "id": 3,
       "text": "Element 3",
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
+      "level": 2,
+      "parentId": 2,
+      "rootParentId": 1,
       "path": [
-        3
+        1,
+        2,
+        "3"
       ],
-      "pathToParent": null,
-      "children": [],
-      "visible": true
+      "pathToParent": [
+        1,
+        2
+      ],
+      "children": [
+        4
+      ],
+      "visible": true,
+      "ec": "expanded"
     },
     {
       "listId": 1,
       "id": 4,
       "text": "Element 4",
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
+      "level": 3,
+      "parentId": 3,
+      "rootParentId": 1,
       "path": [
-        4
+        1,
+        2,
+        "3",
+        "4"
       ],
-      "pathToParent": null,
+      "pathToParent": [
+        1,
+        2,
+        "3"
+      ],
       "children": [],
       "visible": true
     },
@@ -101,34 +119,48 @@
         5
       ],
       "pathToParent": null,
-      "children": [],
-      "visible": true
+      "children": [
+        6
+      ],
+      "visible": true,
+      "ec": "expanded"
     },
     {
       "listId": 1,
       "id": 6,
       "text": "Element 6",
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
+      "level": 1,
+      "parentId": 5,
+      "rootParentId": 5,
       "path": [
-        6
+        5,
+        "6"
       ],
-      "pathToParent": null,
-      "children": [],
-      "visible": true
+      "pathToParent": [
+        5
+      ],
+      "children": [
+        7
+      ],
+      "visible": true,
+      "ec": "expanded"
     },
     {
       "listId": 1,
       "id": 7,
       "text": "Element 7",
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
+      "level": 2,
+      "parentId": 6,
+      "rootParentId": 5,
       "path": [
-        7
+        5,
+        "6",
+        "7"
       ],
-      "pathToParent": null,
+      "pathToParent": [
+        5,
+        "6"
+      ],
       "children": [],
       "visible": true
     },
@@ -187,41 +219,7 @@
       "children": [],
       "visible": true,
       "produkty": "masło",
-      "cena": "10"
-    },
-    {
-      "listId": "2",
-      "id": 12,
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
-      "path": [
-        12
-      ],
-      "pathToParent": null,
-      "children": [],
-      "visible": true,
-      "produkty": "mleko",
-      "cena": "5"
-    },
-    {
-      "listId": "2",
-      "id": 13,
-      "level": 0,
-      "parentId": null,
-      "rootParentId": null,
-      "path": [
-        13
-      ],
-      "pathToParent": null,
-      "children": [
-        11,
-        12
-      ],
-      "visible": true,
-      "produkty": "zakupy",
-      "cena": "15",
-      "ec": "expanded"
+      "ceny": "1"
     }
   ]
 }

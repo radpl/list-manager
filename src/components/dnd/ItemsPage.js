@@ -5,6 +5,8 @@ import { getEntries, saveEntry, deleteEntry } from '../../api/entryApi';
 import { getList } from '../../api/listApi';
 import ItemForm from './ItemForm';
 import { Flipper, Flipped } from 'react-flip-toolkit';
+import { convertEntriesToCSV } from "../../utilities/fileProcessing";
+import FileSaver from 'file-saver';
 
 const style = {
   paddingRight: '80px',
@@ -37,10 +39,18 @@ export const ItemsPage = (props) => {
 
   const [newItem, setNewItem] = useState(newItm);
 
+  const saveCurrentChanges = () => {
+    cards.forEach(entry => saveEntry(entry));
+  }
+
   const handleToggleFormVisibility = (current) => {
     setFormVisibility(!current);
   }
-
+  const handleFileExport = event => {
+    event.preventDefault();
+    const csv = convertEntriesToCSV(cards);
+    FileSaver.saveAs(csv, "data.csv");
+  };
   useEffect(() => {
     const listId = props.match.params.listId;
     if (listId) setListId(listId);
@@ -417,6 +427,10 @@ export const ItemsPage = (props) => {
           formVisible={toggleFormVisibility}
         />
       </Flipper>
+      <div >
+        <button onClick={saveCurrentChanges}>Save changes</button>
+        <button onClick={handleFileExport}>Download</button>
+      </div>
       <div style={style}>
         {/* <Flipper flipKey={cards.map((item) => item.id).join(".")}> */}
         <ul className="ulListItemHeader">

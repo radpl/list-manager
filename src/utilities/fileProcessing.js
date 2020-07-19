@@ -1,5 +1,6 @@
 export const convertEntriesToCSV = (entries) => {
 
+  let header = Object.keys(entries[0]).join(",");
   let lines = entries.map(entry => {
     return Object.values(entry).join(",");
   });

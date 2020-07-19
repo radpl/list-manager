@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
+import '@atlaskit/css-reset';
+import { DndProvider } from 'react-dnd';
+import { HTML5Backend } from 'react-dnd-html5-backend';
+import styled from 'styled-components';
+import App from './components/App';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+const Wrapper = styled.div`
+display:flex;
+padding:8px;
+margin:8px;
+`;
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <DndProvider backend={HTML5Backend}>
+        <Wrapper>
+          <App />
+        </Wrapper>
+      </DndProvider>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();

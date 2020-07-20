@@ -11,15 +11,35 @@
       ]
     },
     {
-      "title": "Zakupy",
+      "title": "Test list",
       "columns": [
         {
           "columnId": 1,
-          "columnName": "produkty"
+          "columnName": "value"
         },
         {
           "columnId": 2,
-          "columnName": "ceny"
+          "columnName": "produkty"
+        },
+        {
+          "columnId": 3,
+          "columnName": "stanowisko"
+        },
+        {
+          "columnId": 4,
+          "columnName": "nowa kolumna"
+        },
+        {
+          "columnId": 5,
+          "columnName": "jeszcze jedna"
+        },
+        {
+          "columnId": 6,
+          "columnName": "następna"
+        },
+        {
+          "columnId": 7,
+          "columnName": "i jeszcze jedna"
         }
       ],
       "id": 2
@@ -59,52 +79,34 @@
       "pathToParent": [
         1
       ],
-      "children": [
-        3
-      ],
-      "visible": true,
-      "ec": "expanded"
+      "children": [],
+      "visible": true
     },
     {
       "listId": 1,
       "id": 3,
       "text": "Element 3",
-      "level": 2,
-      "parentId": 2,
-      "rootParentId": 1,
+      "level": 0,
+      "parentId": null,
+      "rootParentId": null,
       "path": [
-        1,
-        2,
-        "3"
+        3
       ],
-      "pathToParent": [
-        1,
-        2
-      ],
-      "children": [
-        4
-      ],
-      "visible": true,
-      "ec": "expanded"
+      "pathToParent": null,
+      "children": [],
+      "visible": true
     },
     {
       "listId": 1,
       "id": 4,
       "text": "Element 4",
-      "level": 3,
-      "parentId": 3,
-      "rootParentId": 1,
+      "level": 0,
+      "parentId": null,
+      "rootParentId": null,
       "path": [
-        1,
-        2,
-        "3",
-        "4"
+        4
       ],
-      "pathToParent": [
-        1,
-        2,
-        "3"
-      ],
+      "pathToParent": null,
       "children": [],
       "visible": true
     },
@@ -119,48 +121,34 @@
         5
       ],
       "pathToParent": null,
-      "children": [
-        6
-      ],
-      "visible": true,
-      "ec": "expanded"
+      "children": [],
+      "visible": true
     },
     {
       "listId": 1,
       "id": 6,
       "text": "Element 6",
-      "level": 1,
-      "parentId": 5,
-      "rootParentId": 5,
+      "level": 0,
+      "parentId": null,
+      "rootParentId": null,
       "path": [
-        5,
-        "6"
+        6
       ],
-      "pathToParent": [
-        5
-      ],
-      "children": [
-        7
-      ],
-      "visible": true,
-      "ec": "expanded"
+      "pathToParent": null,
+      "children": [],
+      "visible": true
     },
     {
       "listId": 1,
       "id": 7,
       "text": "Element 7",
-      "level": 2,
-      "parentId": 6,
-      "rootParentId": 5,
+      "level": 0,
+      "parentId": null,
+      "rootParentId": null,
       "path": [
-        5,
-        "6",
-        "7"
+        7
       ],
-      "pathToParent": [
-        5,
-        "6"
-      ],
+      "pathToParent": null,
       "children": [],
       "visible": true
     },
@@ -216,10 +204,183 @@
         11
       ],
       "pathToParent": null,
-      "children": [],
+      "children": [
+        12,
+        13,
+        14
+      ],
       "visible": true,
-      "produkty": "masło",
-      "ceny": "1"
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk",
+      "ec": "collapsed"
+    },
+    {
+      "listId": "2",
+      "id": 12,
+      "level": 1,
+      "parentId": 11,
+      "rootParentId": 11,
+      "path": [
+        11,
+        "12"
+      ],
+      "pathToParent": [
+        11
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
+    },
+    {
+      "listId": "2",
+      "id": 13,
+      "level": 1,
+      "parentId": 11,
+      "rootParentId": 11,
+      "path": [
+        11,
+        "13"
+      ],
+      "pathToParent": [
+        11
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
+    },
+    {
+      "listId": "2",
+      "id": 14,
+      "level": 1,
+      "parentId": 11,
+      "rootParentId": 11,
+      "path": [
+        11,
+        "14"
+      ],
+      "pathToParent": [
+        11
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
+    },
+    {
+      "listId": "2",
+      "id": 15,
+      "level": 0,
+      "parentId": null,
+      "rootParentId": null,
+      "path": [
+        15
+      ],
+      "pathToParent": null,
+      "children": [
+        16,
+        17,
+        18
+      ],
+      "visible": true,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk",
+      "ec": "collapsed"
+    },
+    {
+      "listId": "2",
+      "id": 16,
+      "level": 1,
+      "parentId": 15,
+      "rootParentId": 15,
+      "path": [
+        15,
+        "16"
+      ],
+      "pathToParent": [
+        15
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
+    },
+    {
+      "listId": "2",
+      "id": 17,
+      "level": 1,
+      "parentId": 15,
+      "rootParentId": 15,
+      "path": [
+        15,
+        "17"
+      ],
+      "pathToParent": [
+        15
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
+    },
+    {
+      "listId": "2",
+      "id": 18,
+      "level": 1,
+      "parentId": 15,
+      "rootParentId": 15,
+      "path": [
+        15,
+        "18"
+      ],
+      "pathToParent": [
+        15
+      ],
+      "children": [],
+      "visible": false,
+      "value": "jhk",
+      "produkty": "kjh",
+      "stanowisko": "kjhkjh",
+      "nowa kolumna": "jkhlkjh",
+      "jeszcze jedna": "hlkj",
+      "następna": "kjhklj",
+      "i jeszcze jedna": "kjlhlk"
     }
   ]
 }

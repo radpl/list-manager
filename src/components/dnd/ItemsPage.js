@@ -435,10 +435,10 @@ export const ItemsPage = (props) => {
         {/* <Flipper flipKey={cards.map((item) => item.id).join(".")}> */}
         <ul className="ulListItemHeader">
           <li ><div style={{ width: '24px' }}></div></li>
-          <li className="liListItem">id</li>
-          {columnNames.map((columnName) => (<li className="liListItem">{columnName}</li>))}
-          <li className="liListItem">level</li>
-          <li className="liListItem">parentId</li>
+          <li className="liListItemHeader">id</li>
+          {columnNames.map((columnName) => (<li className="liListItemHeader">{columnName}</li>))}
+          <li className="liListItemHeader">level</li>
+          <li className="liListItemHeader">parentId</li>
           {/* <li className="liListItem">rootParentId</li>
           <li className="liListItem">children</li>
           <li className="liListItem">path</li>

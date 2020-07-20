@@ -84,9 +84,9 @@ export const ListItem = ({ id, text, moveCard, findCard, changeLevel, level, ind
       <div ref={(node) => drag(drop(node))} style={{ ...getStyle(backgroundColor, level), opacity, ...display }}>
         {/* <Flipped flipId={id}> */}
         <div style={{ display: 'flex' }}>
-          <ul>
+          <ul className="ulListItem">
             <li style={{ border: 0 }}><div style={{ marginRight: '5px', width: '20px' }}>{children && children.length > 0 && ec && <img id={id} className={ec} src={(ec === 'expanded') ? remImage : addImage} alt="expand collapse handle" style={{ width: '18px', height: '18px' }} onClick={handleExpandCollapse} />}</div></li>
-            <li className="liListItem">{id}</li>
+            <li className="liListItem">{path.join(".")}</li>
             {columnNames.map((columnName) => (<li className="liListItem">{card[columnName]}</li>))}
             <li className="liListItem">{level}</li>
             <li className="liListItem">{parentId}</li>
@@ -94,8 +94,8 @@ export const ListItem = ({ id, text, moveCard, findCard, changeLevel, level, ind
             <li className="liListItem">{'[' + children.reduce((acc, curr) => acc + ',' + curr, "") + ']'}</li>
             <li className="liListItem">{'[' + (path && path.reduce((acc, curr) => acc + ',' + curr, "")) + ']'}</li>
             <li className="liListItem">{'[' + (pathToParent && pathToParent.reduce((acc, curr) => acc + ',' + curr, "")) + ']'}</li> */}
-            <li><button onClick={() => handleDelete(id)}>Delete</button></li>
-            <li><button onClick={() => handleEdit(card)}>Edit</button></li>
+            <li className="liListItem"><button onClick={() => handleDelete(id)}>Delete</button></li>
+            <li className="liListItem"><button onClick={() => handleEdit(card)}>Edit</button></li>
 
           </ul>
         </div>

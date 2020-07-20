@@ -22,17 +22,18 @@ class EntryForm extends Component {
         <Flipped flipId="formToggle">
           <div className="formToggle" style={{ display }}>
             <form onSubmit={handleSave}>
-              {columnNames.map((columnName) => {
-                return (<TextInput
-                  name={columnName}
-                  label={columnName}
-                  value={item[columnName]}
-                  onChange={handleChange}
-                  error={errors.domain}
-                  labelClass="entries"
-                />)
-              })}
-              {/* <TextInput
+              <div className="addItemForm">
+                {columnNames.map((columnName) => {
+                  return (<TextInput
+                    name={columnName}
+                    label={columnName}
+                    value={item[columnName]}
+                    onChange={handleChange}
+                    error={errors.domain}
+                    labelClass="entries"
+                  />)
+                })}
+                {/* <TextInput
             name="text"
             label="Text"
             value={item.text}
@@ -40,6 +41,7 @@ class EntryForm extends Component {
             error={errors.domain}
             labelClass="entries"
           /> */}
+              </div>
               {mode === "add" && <button>Add</button>}
               {mode === "edit" && (
                 <>
@@ -47,8 +49,10 @@ class EntryForm extends Component {
                   <button onClick={this.props.cancelEdit}>Cancel</button>
                 </>
               )}
-
             </form>
+
+
+
             {
               errors && errors.entry && (
                 <div className="input-error">{errors.entry}</div>
